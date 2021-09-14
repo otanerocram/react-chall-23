@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 import { Redirect } from "react-router-dom"
 
 function PlanForm({authorized}) {
@@ -15,9 +16,14 @@ function PlanForm({authorized}) {
     
 
     return (
-        <div>
-            <h1>Plan form</h1>  
-        </div>
+        <Container fluid>
+            <Row>
+                <Col md={5} lg={5} className="d-none d-md-block">Desktop</Col>
+                <Col md={5} lg={5} className="d-block d-md-none">Mobile</Col>
+                <Col xs={12} sm={12} md={7} lg={7}>{placa}, {nombre}</Col>
+            </Row>
+                
+        </Container>
     )
 }
 
