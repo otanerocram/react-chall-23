@@ -1,0 +1,195 @@
+$prim-color: #EF3340;
+$header-bgColor: #F7F8FC;
+$btn-textColor: #FFFFFF;
+
+.btnCotizar{
+    color: $btn-textColor;
+    width: 100%;
+    padding: 20px 32px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "LatoBold";
+    letter-spacing: 0.8px;
+}
+
+.head-bg{
+    background-color: $header-bgColor;
+} 
+
+.HappyMobile{
+    text-align: right;
+}
+
+.HappyMobile > img{
+    min-width: 112px;
+    min-height: 276px;
+    margin-bottom: -24px;
+    margin-right: -12px;
+}
+
+.advise{
+    font-family: "LatoBold";
+    font-style: normal;
+    color: #494F66;
+    padding-left: 32px;
+}
+
+.text01{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    
+}
+.text02{
+    font-family: "Lato" !important;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+}
+.text03{
+    font-family: "Lato" !important;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+    color: $prim-color;
+}
+.text04{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #676F8F;
+    padding-top: 16px;
+}
+
+.bg-hero-mobile{
+    background-color: $header-bgColor;
+}
+
+.rimacLogo{
+    padding: 20px;
+    align-items: center;
+}
+
+.callUs{
+    text-align: right;
+    padding-top: 15px;
+    color: #6769FF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.inputRimac{
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    padding: 16px;
+    font-size: 16px;
+    background: #FFFFFF;
+    border: 1px solid #C5CBE0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.loginWelcome{
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.2px;
+    color: #494F66;
+}
+
+.form-check-input:checked {
+    background-color: #4cca5c;
+    border-color: #4cca5b;
+}
+.form-check-input {
+    width: 20px;
+    height: 20px;
+}
+.login-check-label{
+    display: flex;
+    margin-left: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #676F8F;
+}
+.formDefault{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 296px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+}
+.m-w-100{
+    max-width: 100px;
+    font-family: "Lato";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='red' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
+    
+}
+#input-group-dropdown-1{
+    border: 1.00694px solid #C5CBE0;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #494F66;
+}
+
+.img-container {
+    background: url('../assets/hero-bg.svg') no-repeat;
+    height: 709px;
+    background-size: contain;
+    background-color: #ecf0ff;
+    
+}
+.copyRigths{
+    padding-top: 220px;
+    padding-left: 58px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #A3ABCC;
+}
+
+.dudas{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    justify-content: right;
+    letter-spacing: 0.2px;
+    color: #676F8F;
+    padding: 30px;
+}
+.dudas > span{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6F7DFF;
+}

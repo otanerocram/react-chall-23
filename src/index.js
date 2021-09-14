@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './styles/App.scss';
+import "./styles/Login.scss";
+import './fonts/lato/Lato-Bold.ttf';
+import './fonts/lato/Lato-Regular.ttf';
+import './fonts/Roboto/Roboto-Regular.ttf';
 
 ReactDOM.render(
+  
   <React.StrictMode>
     <App />
   </React.StrictMode>,
