@@ -21,7 +21,18 @@ function PlanForm({authorized}) {
     return (
         <Container fluid>
             <Row>
-                <Col md={5} lg={5} className="d-none d-md-block">Desktop</Col>
+                <Col md={5} lg={5} className="d-none d-md-block">
+                    <Row>
+                        <Col xs={1}></Col>
+                        <Col xs="auto"><RimacLogo /></Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12}>
+                            <h1>Hola {nombre}</h1>
+                        </Col>
+                    </Row>
+                    
+                    </Col>
                 <Col md={5} lg={5} className="d-block d-md-none">
                     <Row>
                         <Col xs={6}> 
@@ -47,7 +58,9 @@ function PlanForm({authorized}) {
                     </Row>
 
                 </Col>
-                <Col xs={12} sm={12} md={7} lg={7}>{placa}, {nombre}</Col>
+                <Col xs={12} sm={12} md={7} lg={7}>
+                <p className="dudas">¿Tienes alguna duda? &nbsp;<span> <FaPhoneAlt />&nbsp;(01) 411 6001</span></p>
+                </Col>
             </Row>
                 
         </Container>
