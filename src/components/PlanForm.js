@@ -4,6 +4,8 @@ import { Redirect } from "react-router-dom"
 import RimacLogo from "../components/RimacLogo";
 import { FaPhoneAlt } from 'react-icons/fa';
 
+import Juan from "../assets/juan.svg";
+
 function PlanForm({authorized}) {
 
     if(!authorized){
@@ -15,8 +17,7 @@ function PlanForm({authorized}) {
 
     console.log(placa)
     console.log(nombre)
-    
-
+        
     return (
         <Container fluid>
             <Row>
@@ -30,6 +31,21 @@ function PlanForm({authorized}) {
                             <p className="callUs"> <FaPhoneAlt />&nbsp;Llámanos</p>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col xs={12} className="text-align-center">
+                        Breadcumbs
+                        </Col>
+                        <Col xs={12}>
+                            <h1>Mira las Coberturas</h1>
+                            <h4>Conoce las coberturas para tu plan</h4>
+
+                            <h4>Placa: {placa}</h4>
+                            <div className="d-block">
+                                <img src={Juan} alt="" />
+                            </div>
+                        </Col>
+                    </Row>
+
                 </Col>
                 <Col xs={12} sm={12} md={7} lg={7}>{placa}, {nombre}</Col>
             </Row>
