@@ -37,7 +37,7 @@ const LoginForm  = (props) => {
         localStorage.setItem('nombre', datoUsuario);
         setTimeout(()=>{
             history.push("/plan")
-        }, 2000)
+        }, 1000)
     }
 
     const consumeAPI = async (url, userID)=> {

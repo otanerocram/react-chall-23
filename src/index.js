@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles/App.scss';
 import "./styles/Login.scss";
+import "./styles/Plan.scss";
 import './fonts/lato/Lato-Bold.ttf';
 import './fonts/lato/Lato-Regular.ttf';
 import './fonts/Roboto/Roboto-Regular.ttf';

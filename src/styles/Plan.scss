@@ -1,0 +1,143 @@
+.bc-rimac{
+    border-top: 1px solid #E4E8F7;
+    max-height: 48px;
+    min-height: 48px;
+    border-bottom: 1px solid #E4E8F7;
+}
+
+.bc-bar{
+    width: 176px;
+    height: 6px;
+    background: #6769FF;
+    border-radius: 20px;
+}
+
+.heroPlan{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.hero-white-box{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 44px 24px;
+    display: flex;
+    flex-direction: row;
+    max-height: 148px;
+    min-height: 148px;
+    height: 148px;
+}
+
+.hero-license-plate{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #A3ABCC;
+    margin-bottom: 0;
+}
+
+.hero-description{
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #494F66;
+}
+
+.form-calulator-box{
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 42px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.form-calculator-text{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #494F66;
+    padding-bottom: 4px;
+}
+
+.form-calculator-text-minmax{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #676F8F;
+    padding-bottom: 16px;
+}
+
+.form-calculator-minmax{
+    line-height: 56px;
+    min-height: 56px;
+    border: 1px solid #456;
+    border-radius: 10px
+}
+
+.form-calculator-minmax > button{
+    border: none;
+    font-size: 25px !important;
+    color: #6F7DFF;
+}
+
+.form-calculator-minmax > input{
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #494F66;
+}
+
+.form-services-box{
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+.form-service-text{
+    font-size: 20px;
+    line-height: 28px;
+    color: #494F66;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+}
+
+.form-service-tab > li{
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.form-service-tab > li > button{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border: none !important;
+    color: #494F66;
+}
+
+.form-service-tab > li > button.active{
+    border-bottom: 2px solid #EF3340 !important;
+    color: #EF3340 !important
+}
