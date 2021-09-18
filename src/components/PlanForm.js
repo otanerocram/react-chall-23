@@ -3,27 +3,20 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 import { IoIosArrowDropleft } from "react-icons/io";
 
-import {
-  Container,
-  Row,
-  Col,
-  InputGroup,
-  Button,
-  FormControl,
-  Tabs,
-  Tab,
-} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-import Header from "../components/Header";
 import Juan from "../assets/juan.svg";
+import Header from "../components/Header";
+import Covering from "../components/Covering";
+import CalculatorBox from "./CalculatorBox";
 
 function PlanForm({ authorized }) {
-  if (!authorized) {
-    return <Redirect to="/" />;
-  }
-
   const placa = localStorage.getItem("placa");
   const nombre = localStorage.getItem("nombre");
+
+  if (placa === "" || placa == null || !authorized) {
+    return <Redirect to="/" />;
+  }
 
   console.log(placa);
   console.log(nombre);
@@ -128,68 +121,9 @@ function PlanForm({ authorized }) {
             </Col>
           </Row>
 
-          <Row>
-            <div className="form-calulator-box">
-              <Col xs={12} className="form-calculator-text">
-                Indica la suma asegurada
-              </Col>
-              <Col xs={12} className="form-calculator-text-minmax">
-                MIN $12,500 | MAX $16,500
-              </Col>
-              <Col xs={12} className="mb-3">
-                <InputGroup className="mb-3 form-calculator-minmax">
-                  <Button variant="outline-secondary" id="button-addon1">
-                    -
-                  </Button>
-                  <FormControl
-                    aria-label="Example text with button addon"
-                    aria-describedby="basic-addon1"
-                    value="$ 14,300"
-                  />
-                  <Button variant="outline-secondary" id="button-addon1">
-                    +
-                  </Button>
-                </InputGroup>
-              </Col>
-            </div>
-          </Row>
-
-          <Row>
-            <div className="form-services-box">
-              <Col xs={12} className="form-service-text">
-                Agrega o quita coberturas
-              </Col>
-              <Col xs={12}>
-                <Tabs
-                  defaultActiveKey="home"
-                  id="uncontrolled-tab-example"
-                  className="form-service-tab mb-3"
-                >
-                  <Tab eventKey="home" title="Protege tu auto">
-                    <p style={{ paddingLeft: 32, paddingRight: 32 }}>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Blanditiis quae nihil adipisci numquam architecto, nam
-                      repellendus, voluptatum nobis earum exercitationem
-                      consequuntur? Laboriosam ut tenetur quas officiis commodi
-                      minus animi aliquam.
-                    </p>
-                  </Tab>
-                  <Tab eventKey="profile" title="Protege a los que te rodean">
-                    <p style={{ paddingLeft: 32, paddingRight: 32 }}>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Blanditiis quae nihil adipisci numquam architecto, nam
-                      repellendus, voluptatum nobis earum exercitationem
-                      consequuntur? Laboriosam ut tenetur quas officiis commodi
-                      minus animi aliquam.
-                    </p>
-                  </Tab>
-                  <Tab eventKey="contact" title="Mejora tu plan" disabled>
-                    <p>Opciones para mejorar tu plan</p>
-                  </Tab>
-                </Tabs>
-              </Col>
-            </div>
-          </Row>
+          <CalculatorBox />
+          <Covering />
+          
         </Col>
       </Row>
     </Container>
