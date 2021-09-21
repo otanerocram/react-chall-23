@@ -12,9 +12,6 @@ export default function Covering() {
     <>
       <Row>
         <div className="form-services-box">
-          <Col xs={12} className="form-service-text">
-            Agrega o quita coberturas
-          </Col>
           <Col xs={12}>
             <Tabs
               defaultActiveKey="home"

@@ -1,8 +1,10 @@
 .bc-rimac {
-  border-top: 1px solid #e4e8f7;
+  display: flex;
+  place-items: center;
+  line-height: 48px;
+  height: 48px;
   max-height: 48px;
   min-height: 48px;
-  border-bottom: 1px solid #e4e8f7;
 }
 
 .bc-bar {
@@ -27,6 +29,18 @@
   max-height: 148px;
   min-height: 148px;
   height: 148px;
+}
+
+.hero-white-box-desktop {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 44px 24px;
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #f0f2fa;
+  max-width: 384px;
+  max-height: 172px;
+  height: 372px;
 }
 
 .hero-license-plate {
@@ -56,9 +70,16 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: normal;
+}
+
+.fcb-m{
   padding-top: 42px;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.fcb-d{
+  padding-top: 42px;
 }
 
 .form-calculator-text {
@@ -108,6 +129,197 @@
   font-weight: normal;
 }
 
-.form-control[readonly]{
-  background-color: #FFF;
+.form-control[readonly] {
+  background-color: #fff;
+}
+
+.cta-form {
+  font-family: "Lato";
+  font-style: normal;
+  color: #494f66;
+  height: 76px;
+  min-height: 76px;
+  padding-top: 16px;
+  padding-left: 32px;
+  border-top-color: #e1e3f4;
+  border-top-style: solid;
+  border-top-width: thin;
+}
+
+.cta-form-mobile {
+  font-family: "Lato";
+  font-style: normal;
+  color: #494f66;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 19px;
+}
+
+.amount-title {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.amount-price {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+.amount-period {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.cta-button {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 6px;
+  min-width: 168px;
+  min-height: 44px;
+  width: 90%;
+}
+
+.cta-button-alt {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 6px;
+  min-width: 168px;
+  min-height: 44px;
+  width: 80%;
+}
+
+.left-pane {
+  background-color: #f7f8fc;
+  // height: calc(100vh - 56px);
+}
+
+.mid-pane {
+  background-color: #fff;
+}
+
+.rigth-pane {
+  background-color: #fff;
+}
+
+.cta-addons {
+  display: block;
+  flex-direction: row;
+  padding-top: 24px;
+}
+
+.cta-addons > p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #494f66;
+}
+
+.cta-addons > ul > li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  color: #676f8f;
+  padding-bottom: 8px;
+  padding-left: 14px;
+}
+
+.cta-addons > ul > li::marker {
+  color: #43b748;
+}
+
+.cta-addons > ul.cta-check {
+  list-style-type: "\2713";
+}
+
+.heroH4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #676f8f;
+  padding-bottom: 24px;
+}
+
+.desktop-main {
+  width: 80%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-dir-row {
+  flex-direction: row;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.cta-box {
+  width: 65%;
+  padding-top: 189px;
+}
+
+.header-style {
+  border-bottom: 1px solid #e4e8f6;
+}
+
+.backIcon {
+  font-size: 24px;
+  display: flex;
+  padding-right: 12px;
+}
+
+.breadCumbText {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 16px;
+  margin-right: 16px;
+  color: #676f8f;
+}
+
+
+
+.salute{
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.6px;
+  color: #494F66;
+  padding-top: 28px;
+  padding-bottom: 8px;
+}
+
+.salute > span {
+  color: red
 }

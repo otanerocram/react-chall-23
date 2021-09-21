@@ -181,9 +181,11 @@ $btn-textColor: #FFFFFF;
     line-height: 20px;
     display: flex;
     justify-content: right;
+    height: 56px;
+    align-items: center;
     letter-spacing: 0.2px;
     color: #676F8F;
-    padding: 30px;
+    padding-right: 120px;
 }
 .dudas > span{
     font-family: "Roboto";
