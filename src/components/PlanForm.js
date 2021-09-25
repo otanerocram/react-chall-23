@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 import { Redirect } from "react-router-dom";
 import { IoIosArrowDropleft } from "react-icons/io";
 
@@ -16,8 +15,11 @@ import PersonOne from "../assets/person-one.svg";
 import PersonTwo from "../assets/person-two.svg";
 import Header from "../components/Header";
 import Covering from "../components/Covering";
+import CtaForm from "./CtaForm";
+import StoreProvider from "../store/StoreProvider";
 
 function PlanForm({ authorized }) {
+  
   const placa = localStorage.getItem("placa");
   const nombre = localStorage.getItem("nombre");
 
@@ -28,6 +30,7 @@ function PlanForm({ authorized }) {
   const datos = {
     nombre: nombre,
     placa: placa,
+    monto: 0,
   };
 
   console.log(placa);
@@ -43,57 +46,62 @@ function PlanForm({ authorized }) {
     color: "#494F66",
     paddingTop: 8,
   };
+  
+  
+  
 
   return (
-    <Container fluid>
-      <Header />
-      <Row>
-        {/* Desktop Render */}
-        <Col className="d-none d-md-block">
-          <Row>
-            <Col md={3} className="left-pane flex-center">
-              menu izquierda
-            </Col>
-            <Col md={6} className="mid-pane flex-center flex-dir-col">
-              <Container style={{ maxWidth: 460 }}>
-                <BreadCumb />
-                <PlanFormDesktop params={datos} />
-                <CalculatorBox />
-                <AddCovering />
-                <Covering />
-              </Container>
-            </Col>
-            <Col md={3} className="right-pane flex-center flex-dir-row">
-              <CtaForm option="desktop" />
-            </Col>
-          </Row>
-        </Col>
+    <StoreProvider>
+      <Container fluid>
+        <Header />
+        <Row>
+          {/* Desktop Render */}
+          <Col className="d-none d-md-block">
+            <Row>
+              <Col md={3} className="left-pane flex-center">
+                menu izquierda
+              </Col>
+              <Col md={6} className="mid-pane flex-center flex-dir-col">
+                <Container style={{ maxWidth: 460 }}>
+                  <BreadCumb />
+                  <PlanFormDesktop params={datos} />
+                  <CalculatorBox />
+                  <AddCovering />
+                  <Covering />
+                </Container>
+              </Col>
+              <Col md={3} className="right-pane flex-center flex-dir-row">
+                <CtaForm option="desktop" />
+              </Col>
+            </Row>
+          </Col>
 
-        {/* Mobile Render */}
-        <Col className="d-block d-md-none">
-          <Row>
-            <Col xs={12} style={{ padding: 0 }}>
-              <div className="mobile-container">
-                <BreadCumb option="mobile" />
-                <div
-                  className="heroPlan"
-                  style={{ backgroundColor: "#F7F8FC" }}
-                >
-                  <h1 style={heroH1}>Mira las Coberturas</h1>
-                  <KnowCovering />
-                  <HeroBox options={{ isMobile: true, plateNumber: placa }} />
+          {/* Mobile Render */}
+          <Col className="d-block d-md-none">
+            <Row>
+              <Col xs={12} style={{ padding: 0 }}>
+                <div className="mobile-container">
+                  <BreadCumb option="mobile" />
+                  <div
+                    className="heroPlan"
+                    style={{ backgroundColor: "#F7F8FC" }}
+                  >
+                    <h1 style={heroH1}>Mira las Coberturas</h1>
+                    <KnowCovering />
+                    <HeroBox options={{ isMobile: true, plateNumber: placa }} />
+                  </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
 
-          <CalculatorBox option="mobile" />
-          <AddCovering option="mobile" />
-          <Covering />
-          <CtaForm />
-        </Col>
-      </Row>
-    </Container>
+            <CalculatorBox option="mobile" />
+            <AddCovering option="mobile" />
+            <Covering />
+            <CtaForm />
+          </Col>
+        </Row>
+      </Container>
+    </StoreProvider>
   );
 }
 
@@ -224,57 +232,7 @@ const PlanFormDesktop = (props) => {
   );
 };
 
-const CtaForm = (props) => {
-  if (props.option === "desktop") {
-    return (
-      <div className="cta-box">
-        <div className="cta-form-mobile">
-          <div className="amount-title">Monto</div>
-          <AmountPrice />
-          <div className="amount-period">mensuales</div>
-        </div>
-        <div className="cta-addons">
-          <p>El precio incluye:</p>
-          <ul className="cta-check">
-            <li>Llanta de Repuesto</li>
-            <li>Análisis de motor</li>
-            <li>Aros grati</li>
-          </ul>
-        </div>
-        <div>
-          <Button variant="danger" className="cta-button-alt">
-            Lo quiero
-          </Button>
-        </div>
-      </div>
-    );
-  } else {
-    return (
-      <Row className="cta-form">
-        <Col xs={5}>
-          <AmountPrice />
-          <div className="amount-period">mensual</div>
-        </Col>
-        <Col xs={7}>
-          <Button variant="danger" className="cta-button">
-            Lo quiero
-          </Button>
-        </Col>
-      </Row>
-    );
-  }
-};
 
-const AmountPrice = (props) => {
-
-  let amount = props.amount;
-
-  amount = amount? amount : 20;
-
-  return (
-    <div className="amount-price">${" "}{amount}</div>
-  )
-}
 
 const CalculatorBox = (props) => {
   const ammountChange = (event) => {

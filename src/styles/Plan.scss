@@ -72,13 +72,13 @@
   font-weight: normal;
 }
 
-.fcb-m{
+.fcb-m {
   padding-top: 42px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.fcb-d{
+.fcb-d {
   padding-top: 42px;
 }
 
@@ -306,20 +306,65 @@
   color: #676f8f;
 }
 
-
-
-.salute{
+.salute {
   font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.6px;
-  color: #494F66;
+  color: #494f66;
   padding-top: 28px;
   padding-bottom: 8px;
 }
 
 .salute > span {
-  color: red
+  color: red;
+}
+
+.thanks {
+  background-image: url("http://192.168.1.5:3000/static/media/user-thanks.908fad3f.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.welcome {
+  display: block;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #676f8f;
+  
+}
+
+.welcome > span {
+  display: block;
+}
+
+.confirm {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #676f8f;
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+.confirmButton {
+  background-color: #ef3340;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 32px;
 }
