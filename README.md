@@ -1,4 +1,4 @@
-# MIT React Excersie - 17 - Web & React Components
+# Rimac SPA application
 ![GitHub code size](https://img.shields.io/github/repo-size/otanerocram/rimac-cotizador-form)
 ![GitHub repo stars](https://img.shields.io/github/stars/otanerocram/rimac-cotizador-form)
 ![GitHub repo forks](https://img.shields.io/github/forks/otanerocram/rimac-cotizador-form)
