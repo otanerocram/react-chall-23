@@ -24,8 +24,9 @@ Use this code in your projects
 
 ## Roadmap: 
 > First Release -> 
-> - Basic Code Excersise
-> 
+> - Responsive
+> - Uses fetch to get some JSON data
+> - Uses bootstrap
 
 ## Changelog:
 Done: 
